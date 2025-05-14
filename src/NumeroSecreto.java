@@ -1,17 +1,20 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class NumeroSecreto {
+public class Main {
 
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Bienvenido al juego del numero secreto");
-        int numeroSecreo =new Random().nextInt(100);;
-        double intentosUsuario =0;
+        int numeroSecreto = new Random().nextInt(100);
+        double numeroUsuario = 0;
+        System.out.println(numeroSecreto);
+        int contador = 0;
+        int intentosUsuario = 0;
+        
+        while (numeroUsuario != numeroSecreto){
+            Scanner teclado = new Scanner(System.in);
+            System.out.println("dijita un numero entre uno y 100");
+            teclado.nextInt();
 
-
-        while(numeroSecreo != intentosUsuario){
-            System.out.println("Indica un numero del 1 al 100");
         }
     }
 }
